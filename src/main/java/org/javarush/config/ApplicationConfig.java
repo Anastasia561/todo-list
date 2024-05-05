@@ -20,7 +20,7 @@ import java.util.Properties;
 public class ApplicationConfig {
 
     @Bean
-    public LocalSessionFactoryBean sessionFactoryBean() {
+    public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
         sessionFactoryBean.setPackagesToScan("org.javarush.domain");
         sessionFactoryBean.setDataSource(dataSource());
